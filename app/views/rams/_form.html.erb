@@ -1,0 +1,42 @@
+<%= form_with(model: ram) do |form| %>
+  <% if ram.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(ram.errors.count, "error") %> prohibited this ram from being saved:</h2>
+
+      <ul>
+        <% ram.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :ModelName %>
+    <%= form.text_field :ModelName %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Manufacturer %>
+    <%= form.text_field :Manufacturer %>
+  </div>
+
+  <div class="field">
+    <%= form.label :RamFrequency %>
+    <%= form.text_field :RamFrequency %>
+  </div>
+
+  <div class="field">
+    <%= form.label :RamGeneration %>
+    <%= form.text_field :RamGeneration %>
+  </div>
+
+  <div class="field">
+    <%= form.label :RamSize %>
+    <%= form.text_field :RamSize %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

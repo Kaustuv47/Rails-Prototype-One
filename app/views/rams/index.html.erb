@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Rams</h1>
+
+<table style="width: 100%" id="table_ram">
+  <thead>
+    <tr>
+      <th>Modelname</th>
+      <th>Manufacturer</th>
+      <th>Ramfrequency</th>
+      <th>Ramgeneration</th>
+      <th>Ramsize</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <%= render partial: 'rams/ram', collection: @rams %>
+  </tbody>
+</table>
+
+<br>
+
+<div id="new_ram">
+  <%= link_to 'New Ram', new_ram_path, remote: true %>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>

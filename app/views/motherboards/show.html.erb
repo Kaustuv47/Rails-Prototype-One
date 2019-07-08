@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Modelname:</strong>
+  <%= @motherboard.ModelName %>
+</p>
+
+<p>
+  <strong>Manufacturer:</strong>
+  <%= @motherboard.Manufacturer %>
+</p>
+
+<p>
+  <strong>Ramfrequency:</strong>
+  <%= @motherboard.RamFrequency %>
+</p>
+
+<p>
+  <strong>Ramgeneration:</strong>
+  <%= @motherboard.RamGeneration %>
+</p>
+
+<%= link_to 'Edit', edit_motherboard_path(@motherboard) %> |
+<%= link_to 'Back', motherboards_path %>

@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Motherboards</h1>
+
+<table style="width: 100%" id="table_motherboard">
+  <thead>
+    <tr>
+      <th>Model Name</th>
+      <th>Manufacturer</th>
+      <th>Ram Frequency</th>
+      <th>Ram Generation</th>
+      <th colspan="10"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <%= render partial: 'motherboard', collection: @motherboards %>
+  </tbody>
+</table>
+
+<br>
+<div id="new_motherboard">
+  <%= link_to 'New Motherboard', new_motherboard_path, remote: true %>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>

@@ -1,0 +1,10 @@
+<tr>
+  <td><%= ram.ModelName %></td>
+  <td><%= ram.Manufacturer %></td>
+  <td><%= ram.RamFrequency %></td>
+  <td><%= ram.RamGeneration %></td>
+  <td><%= ram.RamSize %></td>
+  <td><%= link_to 'Show', ram %></td>
+  <td><%= link_to 'Edit', edit_ram_path(ram) %></td>
+  <td><%= link_to 'Destroy', ram, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+</tr>

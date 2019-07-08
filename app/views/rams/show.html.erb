@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Modelname:</strong>
+  <%= @ram.ModelName %>
+</p>
+
+<p>
+  <strong>Manufacturer:</strong>
+  <%= @ram.Manufacturer %>
+</p>
+
+<p>
+  <strong>Ramfrequency:</strong>
+  <%= @ram.RamFrequency %>
+</p>
+
+<p>
+  <strong>Ramgeneration:</strong>
+  <%= @ram.RamGeneration %>
+</p>
+
+<p>
+  <strong>Ramsize:</strong>
+  <%= @ram.RamSize %>
+</p>
+
+<%= link_to 'Edit', edit_ram_path(@ram) %> |
+<%= link_to 'Back', rams_path %>
